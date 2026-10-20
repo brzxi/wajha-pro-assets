@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="380" viewBox="0 0 1920 380" role="img" aria-label="بانر التصنيفات المتحرك - كانون الأول">
+<title>التصنيفات | كانون الأول</title>
+<desc>بانر متحرك بألوان كانون الأول مع رسم السديرية والشال ولمعان هادئ وعنوان التصنيفات</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#9b7456"/><stop offset=".24" stop-color="#e7d5bf"/><stop offset=".51" stop-color="#f8f3eb"/><stop offset=".76" stop-color="#e5d0b7"/><stop offset="1" stop-color="#917055"/></linearGradient>
+<linearGradient id="sand" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f8eee0" stop-opacity=".85"/><stop offset="1" stop-color="#f0dac0" stop-opacity=".1"/></linearGradient>
+<linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fce6bd"/><stop offset=".48" stop-color="#af855f"/><stop offset="1" stop-color="#f7deaf"/></linearGradient>
+<linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff9f1" stop-opacity=".95"/><stop offset=".55" stop-color="#f8eee2" stop-opacity=".89"/><stop offset="1" stop-color="#ead7c0" stop-opacity=".9"/></linearGradient>
+<linearGradient id="vest" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#342b27"/><stop offset=".53" stop-color="#4c3d34"/><stop offset="1" stop-color="#231c1a"/></linearGradient>
+<linearGradient id="scarf" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d4b08b"/><stop offset=".48" stop-color="#f0dfc9"/><stop offset="1" stop-color="#a87656"/></linearGradient>
+<radialGradient id="halo"><stop stop-color="#fff5d7" stop-opacity=".6"/><stop offset="1" stop-color="#fff1d9" stop-opacity="0"/></radialGradient>
+<filter id="shadow" x="-30%" y="-40%" width="160%" height="180%"><feGaussianBlur in="SourceAlpha" stdDeviation="12" result="b"/><feOffset dy="7"/><feComponentTransfer><feFuncA type="linear" slope=".22"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="glow"><feGaussianBlur stdDeviation="5"/></filter>
+<clipPath id="outer"><rect x="3" y="3" width="1914" height="374" rx="36"/></clipPath>
+<clipPath id="middle"><rect x="531" y="64" width="858" height="252" rx="80"/></clipPath>
+</defs>
+<style>
+@keyframes up{0%,100%{transform:translateY(0)}50%{transform:translateY(-11px)}}
+@keyframes down{0%,100%{transform:translateY(-8px)}50%{transform:translateY(6px)}}
+@keyframes pulse{0%,100%{opacity:.5}50%{opacity:1}}
+@keyframes shine{0%{transform:translateX(-1100px)}55%,100%{transform:translateX(1800px)}}
+@keyframes textup{0%{opacity:.82;transform:translateY(4px)}45%{opacity:1;transform:translateY(-2px)}100%{opacity:.82;transform:translateY(4px)}}
+@keyframes circle{0%,100%{transform:scale(1)}50%{transform:scale(1.13)}}
+@keyframes twinkle{0%,75%,100%{opacity:.25;transform:scale(.8)}82%{opacity:1;transform:scale(1.2)}}
+.left{animation:up 6s ease-in-out infinite}
+.right{animation:down 6.5s ease-in-out infinite}
+.heading{animation:textup 5.5s ease-in-out infinite}
+.glisten{animation:shine 7.2s ease-in-out infinite}
+.starA{animation:twinkle 5.5s ease-in-out infinite;transform-origin:470px 112px}
+.starB{animation:twinkle 4.8s 1.2s ease-in-out infinite;transform-origin:1448px 265px}
+.starC{animation:twinkle 6.2s 2.4s ease-in-out infinite;transform-origin:128px 276px}
+.lum{animation:pulse 5s ease-in-out infinite}
+</style>
+<g>
+<!-- rotating-like category corner cards -->
+<g class="left">
+<rect x="-68" y="-84" width="415" height="400" rx="52" fill="#a27959" opacity=".33" transform="rotate(-14 150 100)"/>
+<g transform="translate(64 10) rotate(-14 170 170)" filter="url(#shadow)">
+<rect x="0" y="0" width="288" height="330" rx="48" fill="#ecd4b8" stroke="#fff8ed" stroke-width="5"/>
+<path d="M63 38Q90 34 107 23H181Q202 34 229 38L273 83 242 147 240 280Q146 302 48 280V147L17 83Z" fill="url(#vest)" stroke="#7b6554" stroke-width="4"/>
+<path d="M106 23Q116 60 145 66Q174 60 181 23L171 71H118Z" fill="#1f1b19" stroke="#bdab97" stroke-width="3"/>
+<path d="M145 66V282" stroke="#9e8064" stroke-width="4"/>
+<path d="M95 185h30v52H95Zm71 0h30v52h-30Z" fill="none" stroke="#9d836e" stroke-width="3"/>
+<circle cx="145" cy="119" r="4" fill="#f0d9b6"/><circle cx="145" cy="171" r="4" fill="#f0d9b6"/><circle cx="145" cy="223" r="4" fill="#f0d9b6"/>
+<path d="M34 286Q146 311 254 286" fill="none" stroke="#fff0d5" stroke-width="2" opacity=".5"/>
+</g>
+</g>
+<g class="right">
+<rect x="1551" y="-88" width="437" height="422" rx="58" fill="#967154" opacity=".35" transform="rotate(14 1772 140)"/>
+<g transform="translate(1610 -6) rotate(14 148 160)" filter="url(#shadow)">
+<rect width="295" height="341" rx="49" fill="#ead2b8" stroke="#fff7ea" stroke-width="5"/>
+<path d="M66 25Q86 54 144 54T221 25L229 110 254 260 182 295 146 215 101 301 30 264 57 108Z" fill="url(#scarf)" stroke="#b08563" stroke-width="3"/>
+<path d="M63 48Q141 108 225 47M60 72Q138 138 230 75M66 108Q144 159 234 103" fill="none" stroke="#fff4e5" stroke-width="8" opacity=".63"/>
+<path d="M89 260L36 287M105 273L63 307M120 281L96 316M170 269L192 315M184 266L222 302M199 258L250 279" stroke="#a87f5d" stroke-width="5" stroke-linecap="round"/>
+<path d="M70 233Q150 214 234 233M70 244Q153 224 238 245" fill="none" stroke="#986b50" stroke-width="2" stroke-dasharray="5 7" opacity=".6"/>
+</g>
+</g>
+<rect x="532" y="65" width="857" height="252" rx="81" fill="#8b6c4e" opacity=".18" filter="url(#glow)"/>
+<rect x="531" y="64" width="858" height="252" rx="80" fill="url(#panel)" stroke="#fff9f2" stroke-width="5" filter="url(#shadow)"/>
+<rect x="544" y="78" width="832" height="226" rx="72" fill="none" stroke="#c7a780" stroke-opacity=".52" stroke-width="2"/>
+<g clip-path="url(#middle)">
+<g class="glisten"><path d="M0 50L90 50 230 340 130 340Z" fill="#fff" opacity=".19"/><path d="M100 0L160 0 330 380 260 380Z" fill="#fff" opacity=".16"/></g>
+</g>
+<g font-family="Tahoma,Arial,sans-serif" direction="rtl" text-anchor="middle" fill="#715643">
+<text x="960" y="120" font-size="27" letter-spacing="1" font-weight="400">كَانُونُ الأَوَّل</text>
+<text x="960" y="229" font-size="102" font-weight="700" fill="#513d30" class="heading">التصنيفات</text>
+<text x="960" y="278" font-size="26" fill="#846b57">دفء الشتاء .. بتفاصيل تليق بك</text>
+</g>
+<path d="M660 252h90M1170 252h90" stroke="#bb946c" stroke-width="2" stroke-linecap="round"/>
+
+<g class="starA" fill="#fff8e2"><path d="M470 94l5 18 18 5-18 5-5 18-5-18-18-5 18-5Z"/></g>
+<g class="starB" fill="#fff8e2"><path d="M1448 244l5 15 15 5-15 5-5 15-5-15-15-5 15-5Z"/></g>
+<g class="starC" fill="#fff8e2"><path d="M128 261l4 15 15 4-15 4-4 15-4-15-15-4 15-4Z"/></g>
+</g>
+</svg>
