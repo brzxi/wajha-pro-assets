@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="253" viewBox="0 0 1280 253" role="img" aria-label="التصنيفات">
+<title>التصنيفات</title>
+<defs>
+<linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#F8EEE9"/>
+<stop offset="55%" stop-color="#F4E3DC"/>
+<stop offset="100%" stop-color="#EED5CB"/>
+</linearGradient>
+<linearGradient id="stroke" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#E9D2C9"/><stop offset="100%" stop-color="#D3B1A0"/>
+</linearGradient>
+<linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+<stop offset="45%" stop-color="#FFFFFF" stop-opacity="0"/>
+<stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.55"/>
+<stop offset="55%" stop-color="#FFFFFF" stop-opacity="0"/>
+<stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+</linearGradient>
+<filter id="shadow" x="-20%" y="-40%" width="140%" height="200%">
+<feGaussianBlur in="SourceAlpha" stdDeviation="7" result="blur"/>
+<feOffset in="blur" dy="5" result="off"/>
+<feColorMatrix in="off" type="matrix" values="0 0 0 0 0.45  0 0 0 0 0.31  0 0 0 0 0.24  0 0 0 0.18 0"/>
+<feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<clipPath id="clip"><rect x="46" y="27" width="1188" height="199" rx="52"/></clipPath>
+</defs>
+<style>
+@keyframes titleFloat {0%,100%{transform:translateY(0px)}50%{transform:translateY(-3px)}}
+@keyframes subPulse {0%,100%{opacity:.85}50%{opacity:1}}
+@keyframes sweep {0%{transform:translateX(-1250px)}55%,100%{transform:translateX(1260px)}}
+@keyframes lineGlow {0%,100%{opacity:.78}50%{opacity:1}}
+.title { animation:titleFloat 4.2s ease-in-out infinite; transform-origin:640px 110px; }
+.subtitle { animation:subPulse 3.8s ease-in-out infinite; }
+.sheen { animation:sweep 5.5s ease-in-out infinite; }
+.line { animation:lineGlow 4s ease-in-out infinite; }
+</style>
+<g filter="url(#shadow)">
+<rect x="46" y="27" width="1188" height="199" rx="52" fill="url(#panel)" stroke="url(#stroke)" stroke-width="4"/>
+<rect x="58" y="39" width="1164" height="175" rx="43" fill="none" stroke="#F6E7E1" stroke-width="2" opacity="0.9"/>
+</g>
+<g clip-path="url(#clip)">
+<ellipse cx="640" cy="55" rx="520" ry="80" fill="#FFFFFF" opacity="0.14"/>
+<rect class="sheen" x="-380" y="20" width="240" height="230" transform="rotate(-18 0 0)" fill="url(#shine)" opacity="0.7"/>
+</g>
+<g fill="#5A4337" font-family="Tahoma, Arial, sans-serif" text-anchor="middle" direction="rtl">
+<text class="title" x="640" y="125" font-size="74" font-weight="700">التصنيفات</text>
+<text class="subtitle" x="640" y="168" font-size="27" fill="#8C6D5B">دفء الشتاء .. بتفاصيل تليق بك</text>
+</g>
+<g stroke="#C5A08B" stroke-width="3" stroke-linecap="round" fill="none" class="line" opacity="0.9">
+<path d="M210 150 H335"/>
+<path d="M945 150 H1070"/>
+</g>
+</svg>
