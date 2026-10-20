@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - 'kanon-alawal/categories-only-corrected.svg'
-      - '.github/workflows/generate-kanon-categories-gif.yml'
+      - '.github/workflows/generate-kanon-final-categories-gif.yml'
 permissions:
   contents: write
 jobs:
